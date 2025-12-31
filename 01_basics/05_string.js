@@ -27,16 +27,17 @@ console.log(anotherString);      //means it start from backward
 
 const newStringOne = "    pritam   "
 console.log(newStringOne);
-console.log(newStringOne.trim());
+console.log(newStringOne.trim());     //trim the extra spaces in string
 
 const url = "https://pritam.com/pritam%20ghosh"
 
 console.log(url.replace('%20','-'));   //replace(search,replace)
-console.log(url.includes('ghosh'));
+console.log(url.includes('ghosh'));    //find the given string, and give output "true" or "false"
 
 const newWord = "I am Pritam Ghosh" 
 
 console.log(newWord.split(' '));     //this makes a array, split it basis of space,
+
 
 
 
