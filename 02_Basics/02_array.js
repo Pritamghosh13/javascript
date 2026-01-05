@@ -14,11 +14,11 @@ console.log(new_all_heros);
 const another_array = [1,2,3,[4,5],6,[7,[4,5]]]
 console.log(another_array[5][1][0]);  //output : 4
 
-const real_another_array = another_array.flat(Infinity)
+const real_another_array = another_array.flat(Infinity)  
 console.log(real_another_array);
 
 
-console.log(Array.isArray("Pritam"))
+console.log(Array.isArray("Pritam"))  //check whether this is array or not.
 console.log(Array.from("Pritam"));  //make it an array.
 console.log(Array.from({name : "Pritam"})); //gives an empty array as a output
 
@@ -27,6 +27,7 @@ let score2 = 200
 let score3 = 300
 
 console.log(Array.of(score1,score2,score3));
+
 
 
 
