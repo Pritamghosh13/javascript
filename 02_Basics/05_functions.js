@@ -36,4 +36,35 @@ function loginUserMessage(username = "you"){  //the "you" print when their is no
 
 console.log(loginUserMessage("Pritam"))  //if we don't pass any username then output will be username
 
+function calculateCart(...num1){  //rest operator, make a array of the passing value.
+    return num1
+}
+console.log(calculateCart(100,200,400,2000))   
+
+
+function calculateCart(val1, val2, ...num1){  //rest operator, make a array of the passing value.
+    return num1
+}
+console.log(calculateCart(100,200,400,2000))    //output: val1 = 100, val2 = 200, [400, 2000]
+
+const user = {
+    username : "Pritam Ghosh",
+    password : "123abc"
+}
+
+function printobj(anyobject){
+    return `username : ${anyobject.username} , password : ${anyobject.password}`
+}
+
+console.log(user)
+
+const newArray = [200,400,500]
+
+function arrayfunction(anyarray){
+    return anyarray[1]
+}
+
+console.log(arrayfunction(newArray))
+
+
 
