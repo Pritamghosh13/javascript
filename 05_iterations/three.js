@@ -11,18 +11,18 @@ const myobj = {
 
 //forin loop
 for (const key in myobj) {
-    // console.log(key);  
+    console.log(key);  
     
-    // console.log(`${key} is shortcut for ${myobj[key]}`);
+    console.log(`${key} is shortcut for ${myobj[key]}`);
     
 }
 
 const programming = ["js", "cpp", "java", "python"]
 
 for (const key in programming) {
-    // console.log(key);   //it prints the keys of the array
+    console.log(key);   //it prints the keys of the array
     
-    // console.log(programming[key]); //prints the values
+    console.log(programming[key]); //prints the values
 }
 
 
@@ -30,19 +30,19 @@ for (const key in programming) {
 const coding = ["js", "python", "cpp"]
 
 coding.forEach( function (item){
-//    console.log(item);
+   console.log(item);
     
 })
 
 
 function printme(item){
-    // console.log(item);
+    console.log(item);
 }
 
 coding.forEach(printme)  //we have to give the reference of printme, not printme()
 
 coding.forEach((item, index, arr)=>{  //we acess all of this like index, value and full array
-// console.log(item, index, arr);
+console.log(item, index, arr);
 })
 
 //ARRAY THAT CONTAINS OBJECTS.
@@ -66,7 +66,7 @@ const myCoding = [
 ]
 //WE USE ARROW FUNCTION IN (FOR EACH) LOOP.
 myCoding.forEach( (item)=>{
-    // console.log(item.languageName);
+    console.log(item.languageName);
 })
 
 
@@ -78,13 +78,13 @@ myCoding.forEach( (item)=>{
 const myNums = [1,2,3,4,5,6,7,8,9,10]
 
 const newNums = myNums.filter((nums) => nums>4)
-// console.log(newNums);
+console.log(newNums);
 
 //if we open scope, we have to write return function manually.
 const newNums1 = myNums.filter((nums) =>{
    return nums > 4
 })
-// console.log(newNums1);
+console.log(newNums1);
 
 
 //without returning, we can use (for each) like this.
@@ -95,7 +95,7 @@ myNums.forEach((num) =>{
         numarray.push(num)
     }
 })
-// console.log(numarray);
+console.log(numarray);
 
 
 
@@ -112,12 +112,13 @@ const books = [
   ];
 
   const MyBooks = books.filter((bk) => bk.genre === "History")   //using filter for making conditional loop in array of multiple objects.
-//   console.log(MyBooks);
+  console.log(MyBooks);
 
   const newBook = books.filter((pr) => {
     return pr.publish>1989 && pr.genre === "History"})
   console.log(newBook);
   
   
+
 
 
