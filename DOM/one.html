@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color : white;">
+    <div id="hello" class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+    <script>
+        const parent = document.querySelector(".parent")  //get the parent div using class.
+        console.log(parent);    //gives the full div
+
+        // const parent = document.getElementById("hello")    
+        // console.log(parent);  //get the parent div using id.
+
+
+        console.log(parent.children);  //gives the child div under the parent div, gives HTML collection, array like element
+        console.log(parent.children[1].innerHTML);  //gives the second element of the child div
+
+        for (let i = 0; i < parent.children.length; i++) {
+            console.log(parent.children[i].innerHTML);
+        }
+        parent.children[1].style.color = "orange"  //giving style
+
+        console.log(parent.firstElementChild);
+
+         console.log(parent.lastElementChild);
+         
+        
+        const dayOne = document.querySelector(".day")
+        
+        console.log(dayOne);
+        console.log(dayOne.nextElementSibling);
+
+        console.log(dayOne.parentElement);
+
+        parent.children[1].innerHTML = "hello"
+        console.log(parent.children[1].innerHTML);
+
+
+        console.log("NODES: ", parent.childNodes);
+        
+        
+
+        
+        
+
+        
+        
+    </script>  
+</body>
+</html>
