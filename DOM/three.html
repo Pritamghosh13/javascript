@@ -30,6 +30,7 @@
         li.appendChild(document.createTextNode(langname))
         document.querySelector(".language").appendChild(li)
     }
+    addOptiLang("golang");
 
 
     //***********EDIT************
@@ -46,6 +47,13 @@
     firstlang.outerHTML = "<li>Typescript</li>"
     
 
-    addOptiLang("golang")
+    
+
+    //*************remove**************
+
+    const lastlang = document.querySelector("li:last-child")  //select the element that you want to remove.
+    lastlang.remove()  
+
 </script>
 </html>
+
