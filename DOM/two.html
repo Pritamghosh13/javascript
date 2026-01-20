@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    
+</body>
+<script>
+    const div = document.createElement('div')  //creating a variable.
+    console.log(div);
+    div.className = "main"
+    // div.setAttribute("class", "main")   
+    div.id = Math.floor(Math.random() * 100 + 1)
+    div.setAttribute("title", "generated title")  //the general method for adding attributes
+    div.style.backgroundColor = "green"
+    div.style.color = "red"
+    // div.innerText = "Pritam Ghosh"
+
+    const addText = document.createTextNode("Pritam Ghosh")  //optimize way to add text.
+    div.appendChild(addText)
+
+    document.body.appendChild(div)  //attaching the elements in the main body.
+</script>
+</html>
