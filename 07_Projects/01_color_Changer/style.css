@@ -1,0 +1,116 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background: #f4f6fb;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Main canvas */
+.canvas {
+  margin: 80px auto;
+  padding: 40px;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.canvas h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #444;
+}
+
+/* Color buttons container spacing */
+.button {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 12px;
+  cursor: pointer;
+  border: 3px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.button:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual colors */
+#grey {
+  background-color: grey;
+}
+
+#white {
+  background-color: white;
+}
+
+#blue {
+  background-color: #3b82f6;
+}
+
+#yellow {
+  background-color: #facc15;
+}
+
+/* Instruction text */
+.canvas h2 {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+}
+
+.canvas h2 span {
+  display: block;
+  margin-top: 8px;
+  font-size: 15px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .canvas {
+    margin: 40px 15px;
+    padding: 30px 20px;
+  }
+
+  .button {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+
+  .canvas h1 {
+    font-size: 24px;
+  }
+}
