@@ -1,0 +1,143 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #000;
+  color: #ffd700;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  padding: 14px 40px;
+  background: #0a0a0a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+nav a {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #000;
+  background: #ffd700;
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 0 20px #ffd700;
+}
+
+/* Project Section */
+.project {
+  background: radial-gradient(circle at top, #111, #000);
+  height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bgPulse 6s infinite alternate;
+}
+
+/* Insert Box */
+#insert {
+  background: rgba(255, 215, 0, 0.06);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  padding: 50px 70px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.25);
+  backdrop-filter: blur(12px);
+  transition: all 0.4s ease;
+}
+
+#insert:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 80px rgba(255, 215, 0, 0.6);
+}
+
+/* Key Text */
+.key {
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: #ffd700;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+  animation: glowText 2s infinite alternate;
+}
+
+/* Table */
+table {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 100%;
+  animation: slideUp 0.5s ease;
+}
+
+th,
+td {
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+th {
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+td {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Hover Effects */
+td:hover {
+  background: #ffd700;
+  color: #000;
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #ffd700;
+}
+
+/* Animations */
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  }
+  to {
+    text-shadow: 0 0 25px rgba(255, 215, 0, 1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bgPulse {
+  from {
+    background-color: #000;
+  }
+  to {
+    background-color: #111;
+  }
+}
