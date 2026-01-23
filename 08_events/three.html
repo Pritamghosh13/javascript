@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pritam Ghosh</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = function(str){
+        console.log(str, Date.now());
+    }
+
+    //    let intervalId = setInterval(sayDate, 1000,"hello")   
+    //syntax: setInterval(function_name, time_interval in miliseconds, paramter that pass in function)
+
+    // clearInterval(intervalId)
+    let InterVal;
+
+    //start button for executing the function in console.
+    const start = document.querySelector("#start")
+    start.addEventListener('click', function(){
+        InterVal = setInterval(sayDate,1000,"hello")
+    })
+    //stop button for stop excuting the function in the console.
+    const stop = document.querySelector("#stop")
+    stop.addEventListener('click', function(){
+        clearInterval(InterVal)
+    })
+</script>
+</html>
