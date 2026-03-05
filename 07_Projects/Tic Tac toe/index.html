@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TIC TAC TOE</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="confetti"></canvas>
+<div class="particles" id="particles"></div>
+
+<div class="container">
+  <div class="header">
+    <div class="title">TIC TAC TOE</div>
+    <div class="subtitle">modern edition</div>
+  </div>
+
+  <div class="mode-selector">
+    <button class="mode-btn active" onclick="setMode('pvp')">2 Players</button>
+    <button class="mode-btn" onclick="setMode('ai')">vs AI</button>
+  </div>
+
+  <div class="scoreboard">
+    <div class="score-card x-card active" id="score-x">
+      <div class="score-label x">Player X</div>
+      <div class="score-value" id="score-x-val">0</div>
+    </div>
+    <div class="score-card draw-card" id="score-draw">
+      <div class="score-label">Draw</div>
+      <div class="score-value" id="score-draw-val">0</div>
+    </div>
+    <div class="score-card o-card" id="score-o">
+      <div class="score-label o" id="o-label">Player O</div>
+      <div class="score-value" id="score-o-val">0</div>
+    </div>
+  </div>
+
+  <div class="turn-indicator" id="turn-indicator">
+    <span class="turn-symbol x">X</span>
+    <span>Your turn</span>
+  </div>
+
+  <div class="board-wrapper">
+    <div class="board" id="board"></div>
+  </div>
+
+  <div class="status" id="status"></div>
+
+  <div class="buttons">
+    <button class="btn btn-primary" onclick="resetGame()">New Game</button>
+    <button class="btn btn-secondary" onclick="resetScores()">Reset Scores</button>
+  </div>
+</div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
