@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Full screen header */
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video background */
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: -2;
+}
+
+/* Dark overlay */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Center content */
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+/* Heading */
+header h1 {
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+
+    padding: 20px 40px;
+    border: 2px solid white;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px white;
+}
+
+/* Button style */
+.btn {
+    padding: 12px 30px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(135deg, #00f2ff, #0077ff);
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+/* Button hover */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 140, 255, 0.6);
+}
+
+/* Button click */
+.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5rem;
+        padding: 15px 25px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
