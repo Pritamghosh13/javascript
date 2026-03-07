@@ -33,4 +33,48 @@ Array.from(buttons).forEach((buttons)=>{
             
         }
     })
+
+})
+
+//for key listener.
+Array.from(buttons).forEach((buttons)=>{
+    document.addEventListener("keydown", function(e){
+        // console.log(e.key);
+        
+
+    if(!isNaN(e.key)){   // number check
+        string += e.key
+    }
+
+    else if(e.key === "+"){
+        string += "+"
+    }
+
+    else if(e.key === "-"){
+        string += "-"
+    }
+
+    else if(e.key === "*"){
+        string += "*"
+    }
+
+    else if(e.key === "/"){
+        string += "/"
+    }
+
+    else if(e.key === "Enter"){
+        string = eval(string)
+    }
+
+    else if(e.key === "Backspace"){
+        string = string.slice(0,-1)
+    }
+
+    else if(e.key === "Delete"){
+        string = ""
+        
+    }
+
+    document.querySelector("input").value = string
+})
 })
